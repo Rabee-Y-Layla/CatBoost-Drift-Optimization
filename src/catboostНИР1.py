@@ -102,20 +102,20 @@ print(f"إصدار CatBoost: {catboost.__version__}")
 
 plt.figure(figsize=(12, 6))
 
-
-plt.plot(y_pred_all_tuned, 'o-', alpha=0.7, label='التنبؤات', color='blue', markersize=4)
+plt.plot(y_pred_all_tuned, 'o-', alpha=0.7, label='predictions', color='blue', markersize=4)
 
 
 plt.plot(Y.values, 's-', alpha=0.7, label='Value', color='red', markersize=4)
 
-'''plt.title('مقارنة بين القيم الحقيقية وتنبؤات النموذج')
-plt.xlabel('رقم العينة')
-plt.ylabel('قيمة الهدف')'''
+'''plt.title('Comparison of actual values ​​with model predictions')
+plt.xlabel('sambel index')
+plt.ylabel('target valyue')'''
 plt.xlabel('Number of Sambel')
 plt.ylabel('Value of samble of Drift_Distance@90%(m)')
 plt.legend()
 plt.grid(True, alpha=0.3)
 plt.show()
 plt.close()
+
 
 
